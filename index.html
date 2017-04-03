@@ -138,6 +138,12 @@
             parallaxBackgroundHorizontal: null,
             parallaxBackgroundVertical: null,
 
+            multiplex: {
+                secret: null,
+                socketId: '0acb0c5a5c6058f5',
+                url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh'
+            },
+
             dependencies: [
                 // {
                 //     src: 'plugin/notes/notes.js',
@@ -161,14 +167,7 @@
                         hljs.initHighlightingOnLoad();
                     }
                 }
-            ],
-
-            multiplex: {
-                // Example values. To generate your own, see the socket.io server instructions.
-                secret: null, // Obtained from the socket.io server. Gives this (the master) control of the presentation
-                socketId: '0acb0c5a5c6058f5', // Obtained from socket.io server
-                url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
-            }
+            ]
         });
     </script>
 </body>
