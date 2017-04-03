@@ -1,29 +1,28 @@
 {
-  "name": "javascript-pitch",
-  "version": "0.1.0",
-  "description": "JavaScript Elevator Pitch",
-  "author": "Arthur Fauquenot <arthurfauquenot@yahoo.com> (htt://arthurfauquenot.com/)",
-  "homepage": "https://github.com/arthurfauq/javascript-pitch#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arthurfauq/javascript-pitch.git"
-  },
-  "main": "app/app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp serve"
-  },
-  "dependencies": {
-    "express": "^4.15.2",
-    "mustache": "^2.3.0",
-    "node-static": "^0.7.9",
-    "run-sequence": "^1.2.2",
-    "socket.io": "^1.7.3"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "gulp": "^3.9.1",
-    "gulp-watch": "^4.3.11"
-  },
-  "license": "MIT"
+    "name": "javascript-pitch",
+    "version": "0.1.0",
+    "description": "JavaScript Elevator Pitch",
+    "author": "Arthur Fauquenot <arthurfauquenot@yahoo.com> (htt://arthurfauquenot.com/)",
+    "homepage": "https://github.com/arthurfauq/javascript-pitch#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/arthurfauq/javascript-pitch.git"
+    },
+    "main": "app/app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "gulp serve"
+    },
+    "dependencies": {
+        "express": "^4.15.2",
+        "mustache": "^2.3.0",
+        "node-static": "^0.7.9",
+        "run-sequence": "^1.2.2"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.8",
+        "gulp": "^3.9.1",
+        "gulp-watch": "^4.3.11"
+    },
+    "license": "MIT"
 }
