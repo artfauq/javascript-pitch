@@ -3,7 +3,6 @@
 
 <head>
     <title>JavaScript Elevator Pitch</title>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Arthur Fauquenot">
@@ -23,46 +22,45 @@
             <section>
                 <h1>JavaScript</h1>
                 <img data-src="images/logo-javascript.png" style="max-width: 10%">
-
-                <p>
-                    <small>par <a href="http://github.com/arthurfauq">Arthur Fauquenot</a></small>
-                </p>
+                <p><small>par <a href="http://github.com/arthurfauq">Arthur Fauquenot</a></small></p>
             </section>
 
             <section>
-                <section>
-                    <h3>Contexte</h3>
-                    <div class="v-align">
-                        <div class="fragment">
-                            <img data-src="images/js-script.png" class="js-logo">
-                            <p><small>Langage de scripts</small></p>
-                        </div>
-                        <div class="fragment">
-                            <img data-src="images/logo-browsers.png" class="js-logo">
-                            <p><small>Éxécution</small></p>
-                        </div>
-                        <div class="fragment">
-                            <img data-src="images/front-stack.png" class="js-logo">
-                            <p><small>HTML + CSS + JS</small></p>
-                        </div>
+                <h2>Contexte</h2>
+                <div class="v-align">
+                    <div class="fragment">
+                        <img data-src="images/js-script.png" class="js-logo">
+                        <p><small>Langage de scripts</small></p>
                     </div>
-                </section>
+                    <div class="fragment">
+                        <img data-src="images/logo-browsers.png" class="js-logo">
+                        <p><small>Éxécuté da</small></p>
+                    </div>
+                    <div class="fragment">
+                        <img data-src="images/front-stack.png" class="js-logo">
+                        <p><small>HTML + CSS + JS</small></p>
+                    </div>
+                </div>
             </section>
 
-
             <section>
-                <section>
-                    <h3>Premières utilisations</h3>
-                    <h4>1995 ~ 2008</h4>
+                <section data-transition="slide-in fade-out">
+                    <h2>Premières utilisations</h2>
+                    <h3>1995 ~ 2008</h3>
                 </section>
 
-                <section>
+                <section data-transition="slide-in fade-out">
                     <h3>Création</h3>
                     <p style="margin-top: -20px"><small>1995</small></p>
-                    <p><small>Dynamiser des pages web</small></p>
+                    <p>Dynamiser des pages web</p>
+                    <ul>
+                        <li class="fragment">Interactions avec l'utilisateur</li>
+                        <li class="fragment">Validation de formulaires</li>
+                        <li class="fragment">Animations</li>
+                    </ul>
                 </section>
 
-                <section>
+                <section data-transition="slide-in fade-out">
                     <h3>jQuery</h3>
                     <p style="margin-top: -20px"><small>2006</small></p>
                     <pre><code >$("#logo-jquery").on('click', function() {
@@ -74,12 +72,12 @@
 
             <section>
                 <section data-transition="slide-in fade-out">
-                    <h3>Révolution du JavaScript</h3>
-                    <h4>2008 ~ 2017</h4>
+                    <h2>Révolution du JavaScript</h2>
+                    <h3>2008 ~ 2017</h3>
                 </section>
 
                 <section data-transition="slide-in fade-out">
-                    <h4>Google Chrome</h4>
+                    <h3>Google Chrome</h3>
                     <p style="margin-top: -20px"><small>2008</small></p>
                     <div class="v-align">
                         <div>
@@ -90,10 +88,7 @@
                 </section>
 
                 <section data-transition="slide-in fade-out">
-                    <script src="js/vendors/three.js"></script>
-                    <script src="js/vendors/Detector.js"></script>
-
-                    <h4>Librairies graphiques</h4>
+                    <h3>Librairies graphiques</h3>
                     <p><small>Visualisation de données, graphiques, 3D... </small></p>
 
                     <div class="v-align">
@@ -112,11 +107,10 @@
 
                     </div>
                     <div style="width: 100%; height: auto" id="webgl-example"></div>
-
                 </section>
 
                 <section data-transition="slide-in fade-out">
-                    <h4><span style="color: #42affa">S</span>ingle <span style="color: #42affa">P</span>age <span style="color: #42affa">A</span>pplication</h4>
+                    <h3><span style="color: #42affa">S</span>ingle <span style="color: #42affa">P</span>age <span style="color: #42affa">A</span>pplication</h3>
                     <p><small>Des frameworks pour des applications web performantes</small></p>
                     <div class="v-align">
                         <div>
@@ -134,7 +128,7 @@
                     </div>
                 </section>
 
-                <section>
+                <section data-transition="slide-in fade-out">
                     <h4>Node.js</h4>
                     <p><small>JavaScript côté serveur et temps réel</small></p>
                     <div class="v-align">
@@ -142,7 +136,6 @@
                             <img data-src="images/logo-nodejs.png" class="js-logo">
                             <p><small>Node.js</small></p>
                         </div>
-
                     </div>
                 </section>
             </section>
@@ -158,108 +151,16 @@
         </div>
     </div>
 
-    <div class="multiplex-address">
+    <footer>
         <a href="http://arthurfauq.github.io/javascript-pitch">arthurfauq.github.io/javascript-pitch</a>
-    </div>
+    </footer>
 
+    <!-- Reveal JS -->
     <script src="lib/js/head.min.js"></script>
     <script src="js/vendors/reveal.js"></script>
 
-    <script src="js/snowflakes.js"></script>
-
     <script>
         Reveal.initialize({
-            // Display controls in the bottom right corner
-            controls: true,
-
-            // Display a presentation progress bar
-            progress: true,
-
-            // Display the page number of the current slide
-            slideNumber: false,
-
-            // Push each slide change to the browser history
-            history: true,
-
-            // Enable keyboard shortcuts for navigation
-            keyboard: true,
-
-            // Enable the slide overview mode
-            overview: true,
-
-            // Vertical centering of slides
-            center: true,
-
-            // Enables touch navigation on devices with touch input
-            touch: true,
-
-            // Loop the presentation
-            loop: false,
-
-            // Change the presentation direction to be RTL
-            rtl: false,
-
-            // Randomizes the order of slides each time the presentation loads
-            shuffle: false,
-
-            // Turns fragments on and off globally
-            fragments: true,
-
-            // Flags if the presentation is running in an embedded mode,
-            // i.e. contained within a limited portion of the screen
-            embedded: false,
-
-            // Flags if we should show a help overlay when the questionmark
-            // key is pressed
-            help: true,
-
-            // Flags if speaker notes should be visible to all viewers
-            showNotes: false,
-
-            // Number of milliseconds between automatically proceeding to the
-            // next slide, disabled when set to 0, this value can be overwritten
-            // by using a data-autoslide attribute on your slides
-            autoSlide: 0,
-
-            // Stop auto-sliding after user input
-            autoSlideStoppable: true,
-
-            // Use this method for navigation when auto-sliding
-            autoSlideMethod: Reveal.navigateNext,
-
-            // Enable slide navigation via mouse wheel
-            mouseWheel: false,
-
-            // Hides the address bar on mobile devices
-            hideAddressBar: true,
-
-            // Opens links in an iframe preview overlay
-            previewLinks: false,
-
-            // Transition style
-            transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-            // Transition speed
-            transitionSpeed: 'default', // default/fast/slow
-
-            // Transition style for full page slide backgrounds
-            backgroundTransition: 'convex', // none/fade/slide/convex/concave/zoom
-
-            // Number of slides away from the current that are visible
-            viewDistance: 3,
-
-            // Parallax background image
-            parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
-
-            // Parallax background size
-            parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
-
-            // Number of pixels to move the parallax background per slide
-            // - Calculated automatically unless specified
-            // - Set to 0 to disable movement along an axis
-            parallaxBackgroundHorizontal: null,
-            parallaxBackgroundVertical: null,
-
             multiplex: {
                 secret: null,
                 id: '2e604cebbda9fc95',
@@ -281,6 +182,12 @@
             }]
         });
     </script>
+
+
+    <!-- Chart JS -->
+    <script src="js/vendors/three.js"></script>
+    <script src="js/vendors/Detector.js"></script>
+    <script src="js/snowflakes.js"></script>
 </body>
 
 </html>

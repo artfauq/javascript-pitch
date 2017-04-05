@@ -33,7 +33,7 @@ input::placeholder {
     height: auto;
 }
 
-.multiplex-address {
+footer {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -44,7 +44,7 @@ input::placeholder {
     z-index: 20;
 }
 
-.multiplex-address a {
+footer a {
     color: #42affa;
     font-size: 1.15em;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
