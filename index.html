@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" ng-app="jsPitch">
+<html lang="fr">
 
 <head>
     <title>JavaScript Elevator Pitch</title>
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="reveal" ng-controller="mainController">
+    <div class="reveal">
         <div class="slides">
             <section>
                 <h1>JavaScript</h1>
@@ -46,14 +46,6 @@
                             <p><small>HTML + CSS + JS</small></p>
                         </div>
                     </div>
-                    <aside class="notes">
-                        <ul>
-                            <li>Langage de programmation créé en 1995</li>
-                            <li>Écrit sous forme de scripts</li>
-                            <li>Utilisation la plus courante : éxécuté dans un nagivateur</li>
-                            <li>Principalement utilisé dans des pages web, combiné à l'HTML et au CSS</li>
-                        </ul>
-                    </aside>
                 </section>
             </section>
 
@@ -62,22 +54,12 @@
                 <section>
                     <h3>Premières utilisations</h3>
                     <h4>1995 ~ 2008</h4>
-                    <aside class="notes">
-                        Simples interactions
-                    </aside>
                 </section>
 
                 <section>
                     <h3>Création</h3>
                     <p style="margin-top: -20px"><small>1995</small></p>
                     <p><small>Dynamiser des pages web</small></p>
-                    <aside class="notes">
-                        <ul>
-                            <li>Concept de programmation basé sur JavaScript et XML</li>
-                            <li>Communication avec serveur sans rechargement de la page</li>
-                            <li>Récupérer des infos / documents sans rechargement complet de la page</li>
-                        </ul>
-                    </aside>
                 </section>
 
                 <section>
@@ -87,15 +69,6 @@
     $(this).fadeOut();
 });</code></pre>
                     <img data-src="images/logo-jquery.png" style="max-width: 30%; padding: 12px" id="logo-jquery">
-
-                    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-                    <script>
-                        $(document).ready(function() {
-                            $("#logo-jquery").on('click', function() {
-                                $(this).fadeOut();
-                            });
-                        });
-                    </script>
                 </section>
             </section>
 
@@ -114,10 +87,6 @@
                             <p><small>Moteur d'éxécution de Chrome</small></p>
                         </div>
                     </div>
-
-                    <aside class="notes">
-                        D3.js, Three.js, Charts.js, Paper.js
-                    </aside>
                 </section>
 
                 <section data-transition="slide-in fade-out">
@@ -144,9 +113,6 @@
                     </div>
                     <div style="width: 100%; height: auto" id="webgl-example"></div>
 
-                    <aside class="notes">
-                        D3.js, Three.js, Charts.js, Paper.js
-                    </aside>
                 </section>
 
                 <section data-transition="slide-in fade-out">
@@ -166,15 +132,6 @@
                             <p><small>Backbone.js</small></p>
                         </div>
                     </div>
-                    <!--
-                    <div>
-                        <p style="margin-bottom: 10px; line-height: 15px; font-size: 1.8em"><small><i class="fa fa-group"></i> {{nbPeople}} </small></p>
-                        <a style="cursor: pointer; margin-right: 20px;" ng-click="increment(nbPeople);"><i class="fa fa-plus-circle"></i></a><a style="cursor: pointer" ng-click="decrement(nbPeople);"><i class="fa fa-minus-circle"></i></a>
-                    </div>-->
-
-                    <aside class="notes">
-                        Facebook &amp; Instagram made with React, Prezi &amp; Netflix made with Angular
-                    </aside>
                 </section>
 
                 <section>
@@ -207,11 +164,6 @@
 
     <script src="lib/js/head.min.js"></script>
     <script src="js/vendors/reveal.js"></script>
-
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <script src="js/jsPitch.js"></script>
-
-    <script src="js/controllers/mainController.js"></script>-->
 
     <script src="js/snowflakes.js"></script>
 
@@ -310,34 +262,23 @@
 
             multiplex: {
                 secret: null,
-                id: 'e8823c5e4254f137',
+                id: '2e604cebbda9fc95',
                 url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh'
             },
 
             dependencies: [{
-                    src: '//cdn.socket.io/socket.io-1.3.5.js',
-                    async: true
-                },
-                // {
-                //     src: 'plugin/notes/notes.js',
-                //     async: true
-                // }, 
-                {
-                    src: 'plugin/multiplex/client.js',
-                    async: true
-                },
-                // {
-                //     src: 'plugin/notes-server/client.js',
-                //     async: true
-                // },
-                {
-                    src: 'plugin/highlight/highlight.js',
-                    async: true,
-                    callback: function() {
-                        hljs.initHighlightingOnLoad();
-                    }
+                src: '//cdn.socket.io/socket.io-1.3.5.js',
+                async: true
+            }, {
+                src: 'plugin/multiplex/client.js',
+                async: true
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
                 }
-            ]
+            }]
         });
     </script>
 </body>
