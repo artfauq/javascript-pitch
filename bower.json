@@ -1,0 +1,21 @@
+{
+  "name": "javascript-pitch",
+  "description": "JavaScript Elevator Pitch",
+  "authors": [
+    "Arthur Fauquenot <arthurfauquenot@yahoo.com> (htt://arthurfauquenot.com/)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/arthurfauq/pitch-js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "angular": "^1.6.4",
+    "font-awesome": "^4.7.0"
+  }
+}
