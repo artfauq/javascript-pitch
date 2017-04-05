@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" ng-app="jsPitch">
 
 <head>
     <title>JavaScript Elevator Pitch</title>
@@ -20,7 +20,7 @@
     <script src="js/jsPitch.js"></script>
 </head>
 
-<body ng-app="jsPitch">
+<body>
     <div class="reveal" ng-controller="mainController">
         <div class="slides">
             <section>
@@ -91,7 +91,7 @@
 });</code></pre>
                     <img data-src="images/logo-jquery.png" style="max-width: 30%; padding: 12px" id="logo-jquery">
 
-                    <script src="js/vendors/jquery.min.js"></script>
+                    <script src="bower_components/jquery/dist/jquery.min.js"></script>
                     <script>
                         $(document).ready(function() {
                             $("#logo-jquery").on('click', function() {
