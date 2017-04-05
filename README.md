@@ -6,4 +6,4 @@ JavaScript presentation in form of a web application made with [Reveal.js](https
 
 Created as part of my six months internship at [Solutec](http://www.solutec.fr/fr/).
 
-Link : [arthurfauq.github.io/javascript-pitch/](arthurfauq.github.io/javascript-pitch/)
+Link : [arthurfauq.github.io/javascript-pitch/](http://arthurfauq.github.io/javascript-pitch/)
