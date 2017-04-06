@@ -9,6 +9,6 @@ gulp.task('serve', function() {
         port: 8080
     });
 
-    gulp.watch('./index.html').on('change', browserSync.reload);
+    gulp.watch('./master.html').on('change', browserSync.reload);
     gulp.watch('./css/style.css').on('change', browserSync.reload);
 });
